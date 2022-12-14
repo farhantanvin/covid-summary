@@ -40,8 +40,7 @@ const CovidSummary = () => {
           id="search-country"
           freeSolo
           options={
-            covidSummaryData === undefined
-              ? covidSummaryData.Countries.map(
+            covidSummaryData.Countries ? covidSummaryData.Countries.map(
                   (option: Country) => option.Country
                 )
               : []
